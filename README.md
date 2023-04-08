@@ -4,9 +4,9 @@ Free energy calculation:
 1. Boost (which is used as parse, the part of filename) You can change the Free_energy.cpp filename part to avoid it.
 2. Cmake compile environment.
 ## Algorithm
-Free energy calculation from the Boltzmann distribution.
- $$F = -k_BTln(P(x))$$,
-Here $k_BT$ is thermol energy ($k_B$ Boltzmann constant, T is temperature). P(x) is the probability of whole trajectory on position x.
+Free energy calculation from the Boltzmann distribution,
+ $$F = -k_BTln(P(x)),$$
+here $k_BT$ is thermol energy ($k_B$ Boltzmann constant, T is temperature). P(x) is the probability of whole trajectory on position x.
 Therefore, first we need to construct histogram to calculate. For each datapoint, we use int type to transfer the double type data. Then, this int can directly used as bin (index), where we don't need to go through the whole scale of position to find the datapoint corresponding bin index.
 
 ## Parameter
